@@ -1,0 +1,22 @@
+# https://www.robotstxt.org/robotstxt.html
+# robots.txt for MERN Stack Application
+
+# Allow all bots to crawl all content
+User-agent: *
+Allow: /
+
+# Disallow sensitive directories
+Disallow: /admin/
+Disallow: /user/
+
+
+# Disallow specific files
+Disallow: /privacy-policy.pdf
+Disallow: /terms-and-conditions.pdf
+
+# Crawl delay for overly enthusiastic bots (in seconds)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# Specify the location of the sitemap
+Sitemap: https://www.prodcuts-near-you.netlify.app/sitemap.xml
